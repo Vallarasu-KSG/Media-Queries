@@ -1,0 +1,528 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.head
+{
+    background-image: url(background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.heading
+{
+    width: 85%;
+    height: 20%;
+    /* background-color: lightpink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+}
+.heading img
+{
+    border-radius: 20px;
+}
+button
+{
+    font-size: 20px;
+    color:#fbfcfd;
+    padding:10px 25px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.sign:hover
+{
+    background-color: green;
+}
+/* nav */
+.fa-bars
+{
+    font-size: 50px;
+    color:gray;
+}
+.content
+{
+    color:#fbfcfd;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 30px;
+    text-align: center;
+}
+.take:hover
+{
+    background-color: rgb(114, 226, 114);
+}
+.sidebar
+{
+    width: 60px;
+    height: 100vh;
+    background: linear-gradient(84deg,#0c8eae 0%, #000729 80%);
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.social-link img,.share-link img
+{
+
+    display: block;
+    width: 25px;
+    margin: 5px auto;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+.fa-bars
+{
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    margin:40px auto 0;
+    cursor: pointer;
+    padding-left: 5px;
+}
+.fa-bars:hover
+{
+    color: white;
+}
+.fa-facebook:hover
+{
+    color: blue;
+}
+.fa-instagram:hover
+{
+    color: rgb(97, 15, 15);
+}
+.fa-twitter:hover
+{
+    color: blue;
+}
+/* .fa-share-nodes
+.fa-question */
+.social-link
+{
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    top:50%;
+    transform:translateY(-50%);
+    text-align: center;
+}
+.share-link
+{
+    font-size: 25;
+    position: absolute;
+    bottom:30px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.bubbles img
+{
+    width: 100px;
+    animation: sample 6s linear infinite;
+} 
+.bubbles
+{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   position: absolute;
+   bottom:0
+}
+
+@keyframes sample
+ {
+    0%
+    {
+        transform:translateY(0);
+        opacity: 0;
+    }
+    25%
+    {
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+        transform: translateY(-90vh);
+    }
+}
+.bubbles img:nth-child(1)
+{
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(2)
+{
+    animation-delay: 1.5s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(3)
+{
+    animation-delay: 2s;
+    width: 35px;
+}
+
+.bubbles img:nth-child(4)
+{
+    animation-delay: 3s;
+    width: 40px;
+}
+
+.bubbles img:nth-child(5)
+{
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(6)
+{
+    animation-delay: 7s;
+    width: 20px;
+}
+/* Tablet */
+@media screen and (max-width:900px) and (min-width:500px)
+{
+    .head
+    {
+        background-image: url("https://wallpapercave.com/wp/wp868040.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        width: 100%;
+    } 
+    .heading img
+    {
+        margin-left: -20px;
+    }
+    h1
+    {
+        color: red;
+        font-size: 45px;
+    }
+    .sign
+    {
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+    }
+    .sidebar
+{
+    height:60px;
+    background: linear-gradient(84deg,#0c8eae 0%, #000729 80%);
+    position: absolute;
+    bottom: 0;
+    top:auto;
+    width: 100%;
+}
+.social-link img,.share-link img
+{
+
+    display: block;
+    width: 25px;
+    margin: 5px auto;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+.fa-bars
+{
+    display: flex;
+    position: absolute;
+    color: black;
+    margin: 0px 0px 50px 5px;
+
+}
+.fa-bars:hover
+{
+    color: white;
+}
+.fa-facebook:hover
+{
+    color: blue;
+}
+.fa-instagram:hover
+{
+    color: rgb(97, 15, 15);
+}
+.fa-twitter:hover
+{
+    color: blue;
+}
+/* .fa-share-nodes:hover
+{
+    color: wheat;
+}
+.fa-question:hover
+{
+    color: wheat;
+} */
+.social-link
+{
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    width: 50px;
+    top:50%;
+    gap: 20px;
+    left: 250px;
+    transform:translateY(-50%);
+    text-align: center;
+}
+.share-link
+{
+    gap: 20px;
+    top: 20px;
+    left: 700px;
+    display: flex;
+    position: absolute;
+    bottom:30px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+/* .sidebar img{
+    width: 55px;
+    padding-left: 10px;
+} */
+@keyframes sample
+{
+   0%
+   {
+       transform:translateY(0);
+       opacity: 0;
+   }
+   25%
+   {
+       opacity: 1;
+   }
+   50%{
+       opacity: 1;
+   }
+   75%
+   {
+       opacity: 1;
+   }
+
+   100%
+   {
+       opacity: 0;
+       transform: translateY(-90vh);
+   }
+}
+.bubbles img:nth-child(1)
+{
+   animation-delay: 1s;
+   width: 30px;
+}
+.bubbles img:nth-child(2)
+{
+   animation-delay: 1.5s;
+   width: 25px;
+}
+
+.bubbles img:nth-child(3)
+{
+   animation-delay: 2s;
+   width: 35px;
+}
+
+.bubbles img:nth-child(4)
+{
+   animation-delay: 3s;
+   width: 40px;
+}
+
+.bubbles img:nth-child(5)
+{
+   animation-delay: 4.5s;
+   width:10px;
+}
+.bubbles img:nth-child(6)
+{
+   animation-delay: 7s;
+   width: 20px;
+}
+}
+/* mobile */
+@media screen and (max-width:500px)
+{
+    .head
+    {
+        background-image: url("https://wallpapercave.com/wp/wp868040.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        width: 100%;
+    } 
+    .content h1
+    {
+        color: rgb(233, 172, 150);
+        font-size: 30px;
+    }
+    .heading img
+    {
+        margin-left: -70px;
+    }
+    .sign
+    {
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+    }
+    .sidebar
+{
+    height:60px;
+    background: linear-gradient(84deg,#0c8eae 0%, #000729 80%);
+    position: absolute;
+    bottom: 0;
+    top:auto;
+    width: 100%;
+}
+.social-link img,.share-link img
+{
+
+    display: block;
+    width: 25px;
+    margin: 5px auto;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+.fa-bars
+{
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    color: black;
+    margin: 0px 0px 50px 5px;
+
+}
+.fa-bars:hover
+{
+    color: white;
+}
+.fa-facebook:hover
+{
+    color: blue;
+}
+.fa-instagram:hover
+{
+    color: rgb(97, 15, 15);
+}
+.fa-twitter:hover
+{
+    color: blue;
+}
+/* .fa-share-nodes
+.fa-question */
+.social-link
+{
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    width: 50px;
+    top:50%;
+    left: 150px;
+    transform:translateY(-50%);
+    text-align: center;
+}
+.share-link
+{
+    top: 20px;
+    left: 350px;
+    display: flex;
+    font-size: 35;
+    position: absolute;
+    bottom:30px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+/* .sidebar img{
+    width: 55px;
+    padding-left: 10px;
+} */
+@keyframes sample
+{
+   0%
+   {
+       transform:translateY(0);
+       opacity: 0;
+   }
+   25%
+   {
+       opacity: 1;
+   }
+   50%{
+       opacity: 1;
+   }
+   75%
+   {
+       opacity: 1;
+   }
+
+   100%
+   {
+       opacity: 0;
+       transform: translateY(-90vh);
+   }
+}
+.bubbles img:nth-child(1)
+{
+   animation-delay: 1s;
+   width: 30px;
+}
+.bubbles img:nth-child(2)
+{
+   animation-delay: 1.5s;
+   width: 25px;
+}
+
+.bubbles img:nth-child(3)
+{
+   animation-delay: 2s;
+   width: 35px;
+}
+
+.bubbles img:nth-child(4)
+{
+   animation-delay: 3s;
+   width: 40px;
+}
+
+.bubbles img:nth-child(5)
+{
+   animation-delay: 4.5s;
+   width:10px;
+}
+.bubbles img:nth-child(6)
+{
+   animation-delay: 7s;
+   width: 20px;
+}
+}
